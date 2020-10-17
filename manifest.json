@@ -1,0 +1,15 @@
+{
+	"manifest_version": 2,
+	"name": "Masks to Condoms",
+	"version": "1.0",
+	"description": "A highly important Chrome Extension exercise",
+	"icons": {"128": "images/condomicon.png" },
+	"content_scripts":
+	[
+		{
+			"matches": ["*://*/*"],
+			"js": ["myscript.js"],
+			"run_at": "document_end"
+		}
+	]
+}
